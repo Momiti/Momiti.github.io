@@ -1,126 +1,185 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
-
-    <!-- Custom CSS -->
-    <link href="CSS/styles.css" rel="stylesheet">
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Christina Schramm - Portfolio</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Kalam&display=swap" rel="stylesheet">
-
-    <title>My Recipes</title>
+    <link href="https://fonts.googleapis.com/css2?family=Kalam&family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/all.min.css">
   </head>
   <body>
-
-    <div class="container text-center my-5">
-        <h1>My Recipes</h1>
-        <p class="lead">
-            A collection of my favourite recipes - vegan and healthy. Enjoy!
-        </p>
-    </div>
-    
-    <!-- Navigation bar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark text-center">
-        <div class="container-fluid">
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div class="navbar-nav">
-              <a class="nav-link active" aria-current="page" href="index.html">Recipes</a>
-              <a class="nav-link" href="ingredients.html">Favourite Ingredients</a>
-              <a class="nav-link" href="about.html">About</a>
-            </div>
-          </div>
+    <main>
+      <!-- ***********************  ABOUT / PROFILE  *********************** -->
+      <header>
+        <!-- ********************* Navigation ****************************** -->
+        <nav class="navigation">
+          <ul>
+              <li><a href="#aboutMe">Über mich</a></li>
+              <li><a href="#workingExperience">Berufserfahrung</a></li>
+              <li><a href="#education">Ausbildung</a></li>
+              <li><a href="#interests">Interessen</a></li>
+          </ul>
+        </nav>
+        <div class="content-wrap">
+          <img class="avatar" src="images/christina.JPG" alt="Christina Schramm headshot">
+          <h1 id="aboutMe">Christina Schramm</h1>
+          <h2>B.Sc. Informationstechnologie | M.A. Linguistik</h2>
+          <p>Gerade abgeschlossenes Bachelorstudium in Informationstechnologie freue ich mich darauf, Produkte für das Web zu entwickeln und in die 
+          Frontend-Entwicklung mit HTML5, CSS3 und JavaScript einzusteigen. Ich interessiere mich sehr für User Interface Design and User Experience und bin gerne kreativ.
+            Ich liebe es, im Team an spannenden Projekte zu arbeiten. Neben Webentwicklung habe ich Spaß daran, neue Sprachen zu lernen.</p>
         </div>
-      </nav>
-    
-    <!-- Page content -->
-    <div class="container mt-5">
-        <div class="row row-cols-1 row-cols-md-3 g-4">
-            <div class="col">
-                <div class="card text-dark bg-light" style="width: 25rem;">    
-                    <img src="images/cauliflower-potato.jpg" class="card-img-top" alt="Cauliflower and potatos">
-                    <div class="card-body">
-                        <h2 class="card-title">Cauliflower and Potatos</h2>
-                        <p class="card-text">Roasted cauliflower in the pan with salty potatos and salad.</p>
-                        <a href="cauliflower.html" class="btn btn-success">View</a>
-                    </div>
-                </div>
+      </header>
+
+      <!-- ***********************  WORK EXPERIENCE  *********************** -->
+      <section class="work-experience">
+        <div class="content-wrap item-details divider">
+          <h2 id="workingExperience"><i class="fas fa-briefcase"></i> Berufserfahrung</h2>
+          <!--<p>Meine vollständige Berufserfahrung auf <a href="https://www.linkedin.com/in/christina-schramm/">LinkedIn</i></a>.</p> -->
+
+          <!-- Job 1 -->
+          <section class="job-item">
+            <div class="job-details">
+              <h3>Studentische Hilfskraft</h3>
+              <p>Fachhochschule Kiel</p>
+              <p>2017 - 2021</p>
             </div>
-            <div class="col">
-                <div class="card text-dark bg-light" style="width: 25rem;">
-                    <img src="images/wrap.jpg" class="card-img-top" alt="Wraps">
-                    <div class="card-body">
-                        <h2 class="card-title">Wraps</h2>
-                        <p class="card-text">Simple wraps with a filling of your choice. They are fast and easy to prepare and always tasty!</p>
-                        <a href="wraps.html" class="btn btn-success">View</a>
-                    </div>
+           <div class="job-summary"><br>
+            <p>Studentische Hilfskraft in der Robotik | Unterstützung bei der Programmierung von Robotern des Typs "Pepper" (Softbank Robotics),
+              Präsentation der Roboter bei Veranstaltungen, Durchführung wöchentlicher Termine mit Pepper in einer Demenz-WG,
+              Unterstützung bei Lehrveranstaltungen, Roberta-Scout für Kurse, in denen Mädchen das Programmieren mit Hilfe von LEGO-Mindstorms Robotern lernen
+            </p>
+           </div>
+          </section>
+          <!-- End of Job block. -->
+           <!-- Job 2 -->
+            <section class="job-item">
+              <div class="job-details">
+                <h3>Lehrbeauftragte</h3>
+                <p>Volkshochschule Kiel | Christian-Albrechts-Universität zu Kiel</p>
+                <p>2012 - 2013 | 2016, 2018</p>
+              </div>
+             <div class="job-summary"><br>
+              <p>Unterricht Italienisch A 1.1, Deutsch für Geflüchtete, Deutsch als Fremdsprache A 2.1</p>
+             </div>
+            </section>
+            <!-- End of Job block. -->
+             <!-- Job 3 -->
+              <section class="job-item">
+                <div class="job-details">
+                  <h3>Hostess</h3>
+                  <p>Sartori & Berger Kiel</p>
+                  <p>2012 - 2018</p>
                 </div>
-            </div>
-            <div class="col">
-                <div class="card text-dark bg-light" style="width: 25rem;">
-                    <img src="images/soup.jpg" class="card-img-top" alt="Cabbage Soup">
-                    <div class="card-body">
-                        <h2 class="card-title">Cabbage Soup</h2>
-                        <p class="card-text">A nice soup for the winter. Living in the north of Germany enables the usage of all kinds of cabbage during the winter.
-                            This soup is based on cabbage, potatos, carrots and lentils.
-                        </p>
-                        <a href="soup.html" class="btn btn-success">View</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card text-dark bg-light" style="width: 25rem;">
-                    <img src="images/pancakes.jpg" class="card-img-top" alt="Panckes">
-                    <div class="card-body">
-                        <h2 class="card-title">Pancakes</h2>
-                        <p class="card-text">Easy 3 ingredient pancakes with fruits.
-                        </p>
-                        <a href="#" class="btn btn-success">View</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card text-dark bg-light" style="width: 25rem;">
-                    <img src="images/porrige.jpg" class="card-img-top" alt="Porridge">
-                    <div class="card-body">
-                        <h2 class="card-title">Porridge with fruits</h2>
-                        <p class="card-text">A nice and tasty breakfast.
-                        </p>
-                        <a href="#" class="btn btn-success">View</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card text-dark bg-light" style="width: 25rem;">
-                    <img src="images/sushi.jpg" class="card-img-top" alt="Sushi">
-                    <div class="card-body">
-                        <h2 class="card-title">Sushi</h2>
-                        <p class="card-text">This is perfect if you want something a bit more special.
-                        </p>
-                        <a href="#" class="btn btn-success">View</a>
-                    </div>
-                </div>
-            </div>
+               <div class="job-summary"><br>
+                <p>Groundhandling & Shore Excursion | Betreuung von (internationalen) Kreuzfahrtgästen bei An- und Abreise, Durchführung des Check-In, Begleitung von Landausflügen</p>
+               </div>
+              </section>
+          <!-- End of Job block. -->
+           <!-- Job 4 -->
+            <section class="job-item">
+              <div class="job-details">
+                <h3>Praktikantin</h3>
+                <p>Volkshochschule Kiel | Centre Culturel de Kiel | Kiel-Marketing</p>
+                <p>2012 - 2013</p>
+              </div>
+             <div class="job-summary"><br>
+              <p>Praktika in den Bereichen der Erwachsenenbildung, Presse- und Öffentlichkeitsarbeit, des Kreuzfahrttourismus, Kulturmanagement und Marketing</p>
+             </div>
+            </section>
+            <!-- End of Job block. -->
         </div>
-    </div>
+      </section>
 
-    <!-- Optional JavaScript; choose one of the two! -->
+      <!-- ******************  EDUCATION & CERTIFICATIONS ****************** -->
+      <section class="education">
+        <div class="content-wrap item-details divider">
+          <h2 id="education"><i class="fas fa-graduation-cap"></i> Ausbildung</h2>
+          <!-- Education FH Kiel -->
+          <section>
+            <h3>Fachhochschule Kiel</h3>
+            <p>Bachelor of Science | 2016 - 2021</p>
+            <p>Informationstechnologie</p>
+            <p>Bachelorthesis | Integration eines Empfehlungssystems für die Aktiverungs-Apps eines humanoiden Roboters in der Altenpflege</p>
+            <ul>
+              <li>Bachelorpraktikum | Erstellung eines interaktiven Spiels für Roboter des Typs Pepper in JavaScript und Phaser.io zur Nutzung in einer Demenz-WG</li>
+              <li>Studienprojekt | Erstellung eines Mietkalenders für die TRASER Software GmbH als Webanwendung unter Verwendung von Angular</li>
+              <li>Erstellung einer Unterrichtseinheit für Studierende des 1.Semesters zum Thema „App-Programmierung für LEGO-Roboter“ mit Fokus auf Usability</li>
+              <li>Studienprojekt | Erstellung eines interaktiven Stundenplans unter Verwendung von React im Rahmen der Veranstaltung „Agile Entwicklungsmethoden“</li>
+            </ul>
+          </section>
+          <!-- End of School block. -->
+           <!-- Education CAU Kiel -->
+           <section>
+            <h3>Christian-Albrechts-Universität zu Kiel</h3>
+            <p>Bachelor | 2013 - 2016</p>
+            <p>Informatik & Skandinavistik</p>
+          </section>
+          <!-- End of School block. -->
+          <!-- Education CAU Kiel -->
+          <section>
+            <h3>Christian-Albrechts-Universität zu Kiel</h3>
+            <p>Magistra Artium | 2006 - 2012</p>
+            <p>Allgemeine und Vergleichende Sprachwissenschaft, Romainsche Philologie, Nordische Philologie</p>
+            <p>Magisterarbeit | Personalpronomina im Deutschen und Französischen - ein sprachtypologischer Verlgeich</p>
+          </section>
+          <!-- End of School block. -->
+          <!-- Abitur -->
+          <section>
+            <h3>Integrierte Gesamtschule Neumünster</h3>
+            <p>Allgemeine Hochschulreife | 1997 - 2006</p>
+          </section>
+          <!-- End of School block. -->
+        </div>
+      </section>
 
-    <!-- Option 1: Bootstrap Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+       <!-- ***********************  Interessen  *********************** -->
+       <section class="interests">
+        <div class="content-wrap item-details divider">
+          <h2 id="interests"><i class="fas fa-pencil-alt"></i> Interessen</h2>
+          <!-- Interesse 1 -->
+          <section>
+            <h3>Teilnahme Virtual PADERO Nagoya Hackathon</h3>
+            <p>11. & 12. Februar 2021</p>
+          </section>
+          <!-- End of block. -->
+          <!-- Interesse 2 -->
+          <section>
+            <h3>Teilnahme 20. Informarica Feminale & 23. Informatica Feminale</h3>
+            <p>Universität Bremen</p>
+            <p>07.-25.08.2017 & Juli-September 2020</p>
+          </section>
+          <!-- End of block. -->
+           <!-- Interesse 3 -->
+           <section>
+            <h3>Mitglied im Bund für Umwelt und Naturschutz Deutschland e.V.</h3>
+            <p>2020 - heute</p>
+          </section>
+          <!-- End of block. -->
+          <!-- Interesse 4 -->
+            <section>
+              <h3>Mitglied im Deutschen Go-Bund</h3>
+                <p>2013 - heute</p>
+            </section>
+          <!-- End of block. -->
+        </div>
+      </section>
 
-    <!-- Option 2: Separate Popper and Bootstrap JS -->
-    <!--
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script>
-    -->
+
+      <!-- *****************  CONTACT INFO / SOCIAL MEDIA  ***************** -->
+      <footer>
+        <div class="content-wrap">
+          <h2>Let's Keep in Touch!</h2>
+
+          <!-- Social media and contact links. Add or remove any networks. -->
+          <ul class="contact-list">
+            <li><a href="https://www.linkedin.com/in/christina-schramm/" target="_blank"><i class="fab fa-linkedin fa-3x"></i></a></li>
+            <li><a href="https://github.com/Momiti" target="_blank"><i class="fab fa-github-square fa-3x"></i></a></li>
+          </ul>
+          <p>&#169; 2021 | C. Schramm</p>
+        </div>
+      </footer>
+    </main>
   </body>
 </html>
